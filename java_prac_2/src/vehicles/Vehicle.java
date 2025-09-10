@@ -1,12 +1,12 @@
 package vehicles;
 
 public abstract class Vehicle {
-    private String model; //(модель)
-    private String license; //(номерной знак)
-    private String color; //(цвет)
-    private int year; //(год выпуска)
-    private String ownerName; //(имя владельца)
-    private int insuranceNumber; //(страховой номер)
+    protected String model; //(модель)
+    protected String license; //(номерной знак)
+    protected String color; //(цвет)
+    protected int year; //(год выпуска)
+    protected String ownerName; //(имя владельца)
+    protected int insuranceNumber; //(страховой номер)
     protected String engineType; //(тип двигателя)
 
     //Абстрактный метод vehicleType

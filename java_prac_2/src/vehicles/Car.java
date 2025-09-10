@@ -1,6 +1,6 @@
 package vehicles;
 
-public class Car {
+public class Car extends Vehicle {
     private String ownerName;
     private int insuranceNumber;
     protected String engineType;
@@ -25,6 +25,13 @@ public class Car {
     }
     public void setEngineType(String engineType){
         this.engineType = engineType;
+    }
+
+    public Car() {}
+
+
+    public String vehicleType() {
+        return "Car";
     }
 }
 
