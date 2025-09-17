@@ -6,3 +6,5 @@ https://github.com/excedereo/java_2cem/tree/main/java_prac_1/1.1-1.2/src<br>
 **2.1-2.2** - Задания 1-2 Практической работы 2<br>
 https://github.com/excedereo/java_2cem/tree/main/java_prac_1/2.1-2.2/src<br>
 ### Практика 2
+**3.1-3.3** - Задания 1-3 Практической работы 3<br>
+https://github.com/excedereo/java_2cem/tree/main/java_prac_2/src
