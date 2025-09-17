@@ -9,8 +9,13 @@ public abstract class Vehicle {
     protected int insuranceNumber; //(страховой номер)
     protected String engineType; //(тип двигателя)
 
-    //Абстрактный метод vehicleType
-    public abstract String vehicleType();
+    //Конструктор Vehicle
+    public Vehicle(String model, String license, String color, int year,
+                   String ownerName, int insuranceNumber, String engineType) {
+        this.model = model; this.license = license; this.color = color; this.year = year;
+        this.ownerName = ownerName; this.insuranceNumber = insuranceNumber; this.engineType = engineType;
+    }
+    public Vehicle() {}
 
     //Геттеры
     public String getModel() {
@@ -43,4 +48,7 @@ public abstract class Vehicle {
         this.insuranceNumber = insuranceNumber;}
     public void setEngineType(String engineType) {
         this.engineType = engineType;}
+
+    //Абстрактный метод vehicleType
+    public abstract String vehicleType();
 }
