@@ -4,6 +4,7 @@ import vehicles.*;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Обращение к закрытым и открытым полям объектов:");
         //Создание объектов
         Car defaultCar = new Car();
         ElectricCar electrocar = new ElectricCar();
@@ -17,5 +18,33 @@ public class Main {
         //Демонстрация обращения к публичным полям
         electrocar.batteryCapacity = 6;
         System.out.println("Battery capacity = "+electrocar.batteryCapacity);
+
+        //Задание 3
+        System.out.println("\n3 часть задания:\n");
+
+        //Создание объектов
+        Vehicle car = new Car();
+        Vehicle electroCar = new ElectricCar();
+
+        //Изменение параметров через сеттеры и вывод
+        car.setColor("white");
+        car.setOwnerName("Mr.White");
+        car.setInsuranceNumber(322);
+        System.out.println(car.toString()+"\n");
+
+        //Проверка доступа через сеттеры
+        System.out.println(car.getModel()+" "+car.getLicense()+" "+car.getColor()+" "+car.getYear()+" "+car.getOwnerName()+" "+car.getInsuranceNumber()+" "+car.getEngineType());
+
+        //Проаерка прямого доступа
+
+        //System.out.println(car.model);
+        //System.out.println(car.license);
+        //System.out.println(car.color);
+        //System.out.println(car.year);
+        //System.out.println(car.ownerName);
+        //System.out.println(car.insuranceNumber);
+        //System.out.println(car.engineType);
+
+        //Не работают - ошибка!
     }
 }

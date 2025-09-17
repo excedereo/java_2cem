@@ -1,12 +1,12 @@
 package vehicles;
 
 public abstract class Vehicle {
-    protected String model; //(модель)
-    protected String license; //(номерной знак)
-    protected String color; //(цвет)
-    protected int year; //(год выпуска)
-    protected String ownerName; //(имя владельца)
-    protected int insuranceNumber; //(страховой номер)
+    private String model; //(модель)
+    private String license; //(номерной знак)
+    private String color; //(цвет)
+    private int year; //(год выпуска)
+    private String ownerName; //(имя владельца)
+    private int insuranceNumber; //(страховой номер)
     protected String engineType; //(тип двигателя)
 
     //Конструктор Vehicle
@@ -51,4 +51,18 @@ public abstract class Vehicle {
 
     //Абстрактный метод vehicleType
     public abstract String vehicleType();
+
+
+    @Override
+    public String toString(){
+        return (getClass().getSimpleName()+":"+
+                "\n  model: "+this.model+
+                "\n  license: "+this.license+
+                "\n  color: "+this.color+
+                "\n  year: "+this.year+
+                "\n  ownerName: "+this.ownerName+
+                "\n  insuranceNumber: "+this.insuranceNumber+
+                "\n  engineType: "+this.engineType
+        );
+    }
 }
